@@ -292,7 +292,7 @@ h6 {
 
 #banner .button {
     font-family: 'Open Sans', sans-serif, Arial, Helvetica;
-    font-size:16px;
+    /* font-size:16px; */
     color:#111;
     border-color:#111;
   
@@ -385,7 +385,7 @@ h6 {
     background-position: 100%;
   }
   
-
+/* 
   .link-fancy1 {
     text-decoration: none;
     display: inline-block;
@@ -396,8 +396,8 @@ h6 {
     color: #d2b356;
   }
   
-  /* Line below the text */
-  /* .link-fancy1:before {
+  
+  .link-fancy1:before {
     content: '';
     display: block;
     height: 1px;
@@ -411,9 +411,9 @@ h6 {
     background-position: 0;
     background-size: 400% 1px;
     transition: background-position 0.8s ease-in-out;
-  } */
+  }
   
-  /* Line above the text */
+  
  .link-fancy1:after {
     content: '';
     display: block;
@@ -433,3 +433,41 @@ h6 {
    .link-fancy1:hover:after {
     background-position: 100%;
   }
+    
+  */
+
+  /* Default style (mobile view) */
+.link-fancy1 {
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    color: inherit;
+}
+
+/* Apply the fancy link style only for desktop view (min-width: 768px or adjust as needed) */
+@media (min-width: 1024px) {
+    .link-fancy1:hover {
+        color: #d2b356;
+    }
+
+    /* Line above the text */
+    .link-fancy1:after {
+        content: '';
+        display: block;
+        height: 1px;
+        width: 100%;
+        transform-origin: left;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-image: linear-gradient(90deg, #151515 0, #151515 25%, transparent 0, transparent 50%, #151515 0, #151515 75%, transparent 0, transparent);
+        background-repeat: no-repeat;
+        background-position: 0;
+        background-size: 400% 1px;
+        transition: background-position 0.8s ease-in-out;
+    }
+
+    .link-fancy1:hover:after {
+        background-position: 100%;
+    }
+}
