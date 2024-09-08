@@ -2591,6 +2591,9 @@ blockquote {
     #banner{
         background:none;
     }
+    #banner-content{
+        background-color: aliceblue;
+    }
     
 }
 
