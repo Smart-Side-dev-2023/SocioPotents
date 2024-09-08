@@ -38,7 +38,7 @@ a:hover, #header.nav-solid nav a:hover {
 /* Border Color */
 
 #banner .section-heading:before, .testimonial.classic footer:before {
-    background: #d2b356;
+    background: #F3C714;
 }
 
 .pricing-block-content:hover {
@@ -90,7 +90,7 @@ a:hover, #header.nav-solid nav a:hover {
 }
 
 .section-heading h2:after {
-    background:#d2b356;
+    background:#F3C714;
     content:"";
     display:block;
     width:30px;
@@ -124,7 +124,7 @@ a:hover, #header.nav-solid nav a:hover {
 /* Banner Background and Text Colors */
 
 #banner {
-    background: url("../images/banner-images/banner-final.png") no-repeat center top;
+    background: url("../images/banner-images/banner3.png") no-repeat center top;
     background-size:cover;
 }
 
@@ -293,21 +293,17 @@ h6 {
     font-family: 'Open Sans', sans-serif, Arial, Helvetica;
     font-size:16px;
     color:#111;
-}
-
-
-/* Button Color */
-
-#banner .button {
     border-color:#111;
+    background-color: #F3C714;
 }
 
 
 /* Button Hover Color */
 
 #banner .button:hover {
-    color:#d2b356;
-    border-color:#d2b356;
+    color:#F3C714;
+    border-color:#F3C714;
+    background-color: #111;
 }
 
 
@@ -326,4 +322,14 @@ h6 {
 
 #landing-footer i {
     color:#999;
+}
+
+
+
+@media (max-width: 768px) {
+ 
+    #banner {
+        background:none;
+    }
+    
 }

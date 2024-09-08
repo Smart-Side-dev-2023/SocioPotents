@@ -2338,5 +2338,8 @@ blockquote {
     #about .aboutus{
         display: block;
     }
+    #banner{
+        background:none;
+    }
     
 }
