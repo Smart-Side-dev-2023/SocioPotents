@@ -22,17 +22,17 @@ body {
 /* Default Link Color */
 
 a, .la-ball-triangle-path {
-    color:#d2b356;
+    color:#F3C714;
 }
 
 a:hover, #header.nav-solid nav a:hover {
-    color:#d2b356;
+    color:#F3C714;
 }
 
 /* Default Icon Color */
 
 .icon i {
-    color:#d2b356;
+    color:#F3C714;
 }
 
 /* Border Color */
@@ -42,7 +42,7 @@ a:hover, #header.nav-solid nav a:hover {
 }
 
 .pricing-block-content:hover {
-    border-color:#d2b356;
+    border-color:#F3C714;
 }
 
 
@@ -68,8 +68,8 @@ a:hover, #header.nav-solid nav a:hover {
 /* Navigation Active State */
 
 #header.nav-solid .active {
-    color: #d2b356;
-    border-color: #d2b356;
+    color: #F3C714;
+    border-color: #F3C714;
 }    
 
 
@@ -82,7 +82,7 @@ a:hover, #header.nav-solid nav a:hover {
 /* Primary Background and Text Colors */
 
 .primary-color, .featured .pricing {
-    background-color:#d2b356;
+    background-color:#F3C714;
 }
 
 .primary-color, .primary-color .section-title, .primary-color .section-subtitle, .featured .pricing, .featured .pricing p {
@@ -279,8 +279,8 @@ h6 {
 /* Button Hover Color */
 
 .button:hover,  input[type="submit"]:hover {
-    border-color:#d2b356;
-    color:#d2b356;
+    border-color:#F3C714;
+    color:#F3C714;
 }
 
 
@@ -293,17 +293,19 @@ h6 {
     font-family: 'Open Sans', sans-serif, Arial, Helvetica;
     font-size:16px;
     color:#111;
-    border-color:#111;
-    background-color: #F3C714;
+    border-color:#F3C714;
+
+   
 }
 
 
 /* Button Hover Color */
 
 #banner .button:hover {
-    color:#F3C714;
-    border-color:#F3C714;
-    background-color: #111;
+    color:#111;
+    border-color:#111;
+  
+  
 }
 
 
