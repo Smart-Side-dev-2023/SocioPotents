@@ -2332,10 +2332,10 @@ blockquote {
 }
 
 @media (max-width: 768px) {
-    #services img{
+    #about img{
         display: none;
     }
-    #services .aboutus{
+    #about .aboutus{
         display: block;
     }
     
