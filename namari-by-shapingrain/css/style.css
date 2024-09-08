@@ -1498,7 +1498,7 @@ blockquote {
 /*------------------------------------------------------------------------------------------*/
 /* Footer Styles */
 #landing-footer {
-    background-color: #222;
+    background-color: #1a1a1a;
     color: #ccc;
     padding: 40px 20px;
     font-family: 'Open Sans', sans-serif, Arial, Helvetica;
@@ -1507,6 +1507,7 @@ blockquote {
 .footer-container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     flex-wrap: wrap;
     padding: 0 50px;
     gap: 20px;
@@ -1534,17 +1535,17 @@ blockquote {
 
 .footer-section p {
     font-size: 14px;
-    line-height: 1.6;
+    line-height: 2.5;
     margin-bottom: 20px;
 }
 
 .footer-logo {
-    width: 120px;
+    width: 320px;
     margin-bottom: 10px;
 }
 
 .contact-info p {
-    font-size: 18px;
+    font-size: 16px;
     margin: 5px 0;
 }
 
@@ -1565,7 +1566,7 @@ blockquote {
 
 .social-contact-info a {
     color: #ccc;
-    font-size: 20px; /* Increase icon size */
+    font-size: 16px; /* Increase icon size */
     transition: color 0.3s ease;
     display: inline-block; /* Ensure icons align in a line */
 }
@@ -1644,7 +1645,7 @@ blockquote {
 }
 
 .footer-bottom a:hover {
-    color: #4cae4c;
+    color: #fff;
 }
 
 /* Responsive Design */
@@ -1688,19 +1689,59 @@ blockquote {
         padding: 10px 16px;
     }
 }
+
+
+.company-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.company-logo-quote {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; /* Adjust spacing between the logo and the quote */
+    margin-bottom: 20px; /* Space below the logo and quote */
+}
+
+.footer-logo {
+    width: 130px; /* Adjust size as needed */
+    margin: 0; /* Remove margin if needed */
+}
+
+
 .company-name {
     font-family: 'Montserrat', sans-serif; /* Change to a modern sans-serif font */
     font-size: 40px;                      /* Make the font size bigger */
-    color: #fff;                          /* Set the color to white or any other color that fits your design */
+    color: #fff;                          /* Default color for "Potents" */
     font-weight: bold;                    /* Make the text bold for emphasis */
     margin: 0;                            /* Remove default margin */
     text-transform: uppercase;            /* Transform text to uppercase for a stronger appearance */
     letter-spacing: 2px;                  /* Add spacing between letters for readability */
-    line-height: 1.2;                     /* Adjust line height to suit the font size */
+    line-height: 1.4;                     /* Adjust line height to suit the font size */
 }
-.company-name:hover{
-    color: #d2b356;
+
+.company-part {
+    transition: color 0.3s ease;
 }
+
+.company-part.socio {
+    color: #d2b356; /* Yellow color for "Socio" */
+}
+
+.company-part.potents {
+    color: #fff; /* White color for "Potents" */
+}
+
+.company-name:hover .company-part.socio {
+    color: #fff; /* White color for "Socio" on hover */
+}
+
+.company-name:hover .company-part.potents {
+    color: #d2b356; /* Yellow color for "Potents" on hover */
+}
+
 
 .company-quote {
     font-style: italic;              /* Italicize the text */
@@ -1711,7 +1752,7 @@ blockquote {
     padding-left: 20px;              /* Create more space between the text and the border */
     margin-top: 15px;                /* Add some space above the quote */
     font-family: 'Georgia', serif;   /* Change font to a serif for a more formal feel */
-    line-height: 1.8;                /* Increase line height for readability */
+    line-height: 1.5;                /* Increase line height for readability */
 }
 
 .quote-mark {
@@ -1721,6 +1762,9 @@ blockquote {
     line-height: 1;                  /* Ensure quotation marks do not affect line height */
 }
 
+#landing-footer #copyright{
+    margin:0 auto;
+}
 
 
 /* Scroll Up */
@@ -2375,7 +2419,6 @@ blockquote {
 
     /* Footer */
     #landing-footer #copyright {
-        float: left;
         width: 50%;
     }
 
@@ -2470,7 +2513,6 @@ blockquote {
 
     /* Footer */
     #landing-footer #copyright {
-        float: left;
         width: 50%;
     }
 

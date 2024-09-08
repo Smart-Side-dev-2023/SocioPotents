@@ -336,7 +336,7 @@ h6 {
 
 
 .link-fancy {
-    color: #151515;
+    color: #d2b356;
     text-decoration: none;
     display: inline-block;
     position: relative; }
@@ -353,7 +353,7 @@ h6 {
     position: absolute;
     left: 0;
     bottom: 0;
-    background-image: linear-gradient(90deg, #151515 0, #151515 25%, transparent 0, transparent 50%, #151515 0, #151515 75%, transparent 0, transparent);
+    background-image: linear-gradient(90deg, #d2b356 0, #d2b356 25%, transparent 0, transparent 50%, #d2b356 0, #d2b356 75%, transparent 0, transparent);
     background-repeat: no-repeat;
     background-position: 0;
     background-size: 400% 1px;
