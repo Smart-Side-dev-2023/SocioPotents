@@ -1539,11 +1539,11 @@ blockquote {
     line-height: 2.5;
     margin-bottom: 20px;
 }
-
+/* 
 .footer-logo {
     width: 320px;
     margin-bottom: 10px;
-}
+} */
 
 .contact-info p {
     font-size: 16px;
@@ -1707,7 +1707,7 @@ blockquote {
 }
 
 .footer-logo {
-    width: 130px; /* Adjust size as needed */
+    width: 160px; /* Adjust size as needed */
     margin: 0; /* Remove margin if needed */
 }
 
