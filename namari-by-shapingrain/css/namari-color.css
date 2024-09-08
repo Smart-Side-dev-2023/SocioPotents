@@ -22,27 +22,27 @@ body {
 /* Default Link Color */
 
 a, .la-ball-triangle-path {
-    color:#F3C714;
+    color:#d2b356;
 }
 
 a:hover, #header.nav-solid nav a:hover {
-    color:#F3C714;
+    color:#d2b356;
 }
 
 /* Default Icon Color */
 
 .icon i {
-    color:#F3C714;
+    color:#d2b356;
 }
 
 /* Border Color */
 
 #banner .section-heading:before, .testimonial.classic footer:before {
-    background: #F3C714;
+    background: #d2b356;
 }
 
 .pricing-block-content:hover {
-    border-color:#F3C714;
+    border-color:#d2b356;
 }
 
 
@@ -68,8 +68,8 @@ a:hover, #header.nav-solid nav a:hover {
 /* Navigation Active State */
 
 #header.nav-solid .active {
-    color: #F3C714;
-    border-color: #F3C714;
+    color: #d2b356;
+    border-color: #d2b356;
 }    
 
 
@@ -82,7 +82,7 @@ a:hover, #header.nav-solid nav a:hover {
 /* Primary Background and Text Colors */
 
 .primary-color, .featured .pricing {
-    background-color:#F3C714;
+    background-color:#d2b356;
 }
 
 .primary-color, .primary-color .section-title, .primary-color .section-subtitle, .featured .pricing, .featured .pricing p {
@@ -90,7 +90,7 @@ a:hover, #header.nav-solid nav a:hover {
 }
 
 .section-heading h2:after {
-    background:#F3C714;
+    background:#d2b356;
     content:"";
     display:block;
     width:30px;
@@ -279,8 +279,8 @@ h6 {
 /* Button Hover Color */
 
 .button:hover,  input[type="submit"]:hover {
-    border-color:#F3C714;
-    color:#F3C714;
+    border-color:#d2b356;
+    color:#d2b356;
 }
 
 
@@ -293,7 +293,8 @@ h6 {
     font-family: 'Open Sans', sans-serif, Arial, Helvetica;
     font-size:16px;
     color:#111;
-    border-color:#F3C714;
+    border-color:#111;
+  
 
    
 }
@@ -303,9 +304,7 @@ h6 {
 
 #banner .button:hover {
     color:#111;
-    border-color:#111;
-  
-  
+    border-color:#d2b356;
 }
 
 
