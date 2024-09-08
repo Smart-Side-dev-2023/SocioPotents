@@ -302,7 +302,7 @@ section {
 /* --------- 2.1 Header --------- */
 
 #header {
-    height: 71px !important;
+    height: 80px !important;
     overflow: visible;
     z-index: 9999;
     width: 100%;
@@ -486,7 +486,7 @@ section {
 
 #header nav ul {
     text-transform: uppercase;
-
+    padding-top: 8px;
 }
 
 #header nav a {
@@ -497,7 +497,8 @@ section {
 }
 
 #header nav a:hover {
-    opacity: 0.6;
+    
+    color: #d2b356;
 }
 
 /*Navigation Solid*/
@@ -2594,58 +2595,52 @@ blockquote {
 }
 
 .head-nav {
+    width: 100%;
+    position: fixed;  /* Fix the navigation bar to the top of the viewport */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);  /* Add a subtle shadow for depth */
+    background-color: #ffffff;  /* Set a solid color or you can use a gradient */
+    color: #000000;  /* Text color to ensure good contrast */
     display: flex;
     justify-content: flex-end;
-    padding: 20px;
+    padding: 0px 20px;  /* Add padding to the navigation bar */
+    z-index: 1000;  /* Ensure it sits above other content */
 }
 
 .header-content {
     width: 100%;
     display: flex;
-    justify-content: flex-end;
     align-items: center;
+    justify-content: flex-start;
+    gap: 35px;
 }
 
+.back-button {
+    background-color: #fff;  /* Background color of the button */
+    border: 1px solid #000000;  /* Border color of the button */
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
 
 .back-button i {
     margin-right: 8px;
 }
 
 .back-button:hover {
-    color: #D2B356;
+    color: #D2B356;  /* Color change on hover */
 }
 
 .back-button:focus {
-    outline: none;
-}
- /* Header content styling */
- .header-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
+    outline: none;  /* Remove focus outline */
 }
 
 /* Title styling */
 #title {
-    font-size: 30px;
-    font-weight: bold;
-    margin: 0;
-    padding: 0;
-}
-
-/* Back button styling */
-.back-button {
-    background-color: #fff;
-    border: 1px solid #000000;
-    padding: 10px 15px;
-    font-size: 16px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-}
-
-
-.back-button i {
-    margin-right: 5px;
+    font-size: 28px;
+    margin-right: 10px;
+    font-weight: 900;
+    /* padding: 0; */ /* Ensure the title text is readable */
 }

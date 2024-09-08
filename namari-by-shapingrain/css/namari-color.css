@@ -55,6 +55,7 @@ a:hover, #header.nav-solid nav a:hover {
 
 #header nav a, #header i {
     color:#111;
+    font-weight: 600;
 }
 
 
@@ -336,14 +337,17 @@ h6 {
 
 
 .link-fancy {
-    color: #d2b356;
+    color: #000000;
     text-decoration: none;
     display: inline-block;
-    position: relative; }
+    position: relative;
+  }
   
   .link-fancy:hover {
-    color: #d2b356; }
+    color: #d2b356;
+  }
   
+  /* Line below the text */
   .link-fancy:before {
     content: '';
     display: block;
@@ -357,7 +361,76 @@ h6 {
     background-repeat: no-repeat;
     background-position: 0;
     background-size: 400% 1px;
-    transition: background-position 0.8s ease-in-out; }
+    transition: background-position 0.8s ease-in-out;
+  }
+  
+  /* Line above the text */
+  /* .link-fancy:after {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 100%;
+    transform-origin: left;
+    position: absolute;
+    left: 0;
+    top: 0; 
+    background-image: linear-gradient(90deg, #d2b356 0, #d2b356 25%, transparent 0, transparent 50%, #d2b356 0, #d2b356 75%, transparent 0, transparent);
+    background-repeat: no-repeat;
+    background-position: 0;
+    background-size: 400% 1px;
+    transition: background-position 0.8s ease-in-out;
+  } */
   
   .link-fancy:hover:before {
-    background-position: 100%; }
+    background-position: 100%;
+  }
+  
+
+  .link-fancy1 {
+    color: #000000;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+  }
+  
+  .link-fancy1:hover {
+    color: #d2b356;
+  }
+  
+  /* Line below the text */
+  /* .link-fancy1:before {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 100%;
+    transform-origin: left;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-image: linear-gradient(90deg, #d2b356 0, #d2b356 25%, transparent 0, transparent 50%, #d2b356 0, #d2b356 75%, transparent 0, transparent);
+    background-repeat: no-repeat;
+    background-position: 0;
+    background-size: 400% 1px;
+    transition: background-position 0.8s ease-in-out;
+  } */
+  
+  /* Line above the text */
+ .link-fancy1:after {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 100%;
+    transform-origin: left;
+    position: absolute;
+    left: 0;
+    top: 0; 
+    background-image: linear-gradient(90deg, #151515 0, #151515 25%, transparent 0, transparent 50%, #151515 0, #151515 75%, transparent 0, transparent);
+    background-repeat: no-repeat;
+    background-position: 0;
+    background-size: 400% 1px;
+    transition: background-position 0.8s ease-in-out;
+  }
+  
+   .link-fancy1:hover:after {
+    background-position: 100%;
+  }
