@@ -37,7 +37,7 @@ a:hover, #header.nav-solid nav a:hover {
 
 /* Border Color */
 
-#banner .section-heading:before, .testimonial.classic footer:before {
+#banner .section-heading:before, .testimonial.classic footer:after {
     background: #111;
 }
 

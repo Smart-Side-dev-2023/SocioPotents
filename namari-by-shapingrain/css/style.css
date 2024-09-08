@@ -956,10 +956,10 @@ blockquote {
     display: block;
 }
 
-.testimonial.classic footer:before {
+.testimonial.classic footer:after {
     display: block;
     content: "";
-    width: 30px;
+    width: 100px;
     height: 4px;
     margin: 10px auto 15px auto;
 }
