@@ -29,6 +29,9 @@
 
     <!--Google Webfonts-->
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 </head>
 
 <body>
@@ -78,26 +81,26 @@
                             <ul class="social-icons">
                                 <li>
                                     <a target="_blank" title="Facebook" href="https://www.facebook.com/username">
-                                        <i class="fa fa-facebook fa-1x"></i><span>Facebook</span>
+                                        <i class="fa-brands fa-facebook-f"></i><span>Facebook</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a target="_blank" title="Google+" href="http://google.com/+username">
-                                        <i class="fa fa-google-plus fa-1x"></i><span>Google+</span>
+                                    <a target="_blank" title="Mail" href="mailto:contact@sociopotents.com">
+                                        <i class="fa-solid fa-envelope"></i><span>Email</span>
                                     </a>
                                 </li>
                                 <li>
                                     <a target="_blank" title="Twitter" href="http://www.twitter.com/username">
-                                        <i class="fa fa-twitter fa-1x"></i><span>Twitter</span>
+                                        <i class="fa-brands fa-twitter"></i><span>Twitter</span>
                                     </a>
                                 </li>
                                 <li>
                                     <a target="_blank" title="Instagram" href="http://www.instagram.com/username">
-                                        <i class="fa fa-instagram fa-1x"></i><span>Instagram</span>
+                                        <i class="fa-brands fa-instagram"></i><span>Instagram</span>
                                     </a>
                                 </li>
-
                             </ul>
+
                             <!--End of Social Icons in Header-->
 
                         </aside>
@@ -404,41 +407,140 @@
         </main>
         <!--End Main Content Area-->
 
-
         <!--Footer-->
         <footer id="landing-footer" class="clearfix">
-            <div class="row clearfix">
+            <div class="footer-container">
+                <!-- About Us and Company Info Section -->
+                <div class="footer-section about-company-info">
+                    <div class="company-info">
+                        <img src="./images/SP logo footer.png" alt="Socio Potents Logo" class="footer-logo">
+                        <h4 class="company-name">SOCIO POTENTS</h4>
 
-                <p id="copyright" class="col-2">Made with love ❤️ by <a href="#">Kyras</a>
-                </p>
+                        <p class="company-quote">
+                            <span class="quote-mark">“ </span> We are your partners in growth, helping you unlock your
+                            full potential and achieve your dreams.<span class="quote-mark">”</span>
+                        </p>
+                    </div>
 
-                <!--Social Icons in Footer-->
-                <ul class="col-2 social-icons">
-                    <li>
-                        <a target="_blank" title="Facebook" href="https://www.facebook.com/username">
-                            <i class="fa fa-facebook fa-1x"></i><span>Facebook</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a target="_blank" title="Google+" href="http://google.com/+username">
-                            <i class="fa fa-google-plus fa-1x"></i><span>Google+</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a target="_blank" title="Twitter" href="http://www.twitter.com/username">
-                            <i class="fa fa-twitter fa-1x"></i><span>Twitter</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a target="_blank" title="Instagram" href="http://www.instagram.com/username">
-                            <i class="fa fa-instagram fa-1x"></i><span>Instagram</span>
-                        </a>
-                    </li>
 
-                </ul>
-                <!--End of Social Icons in Footer-->
+                </div>
+
+                <!-- Contact Form Section -->
+                <div class="footer-section contact-form">
+                    <h4 style="font-size: 30px; color: #d2b356;">MAIL FOR ENQUIRY</h4>
+                    <form id="myForm" action="#">
+                        <div class="input-line" style="display: flex;align-items: center;gap: 10px;">
+                            <input id="fromEmail" type="email" placeholder="From (Your Email)" class="input-name"
+                                required>
+                            <span><a class="clear-icon" onclick="clearField('fromEmail')"><i
+                                        class="fas fa-times"></i></a></span>
+                        </div>
+                        <script>
+
+                            function clearField(fieldId) {
+                                document.getElementById(fieldId).value = '';
+                            }
+                        </script>
+                        <style>
+                            .clear-icon {
+                                position: relative;
+                                top: 50%;
+                                transform: translateY(-50%);
+                            }
+
+                            .clear-icon i {
+                                font-size: 20px;
+                                cursor: pointer;
+                            }
+
+                            .clear-icon i:hover {
+                                color: red;
+                                transform: scale(1.2);
+                            }
+                        </style>
+                        <input type="text" id="subject" placeholder="Subject" class="input-subject" autocomplete="off">
+                        <textarea id="body" class="input-textarea" placeholder="Message" required></textarea>
+                        <button type="submit" id="submit" value="send" class="submit-btn">
+                            Send Mail <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+
+                    <script>
+                        document.getElementById('myForm').addEventListener('submit', function (event) {
+                            event.preventDefault(); // Prevent the form from submitting the traditional way
+
+                            const fromEmail = document.getElementById('fromEmail').value;
+                            if (!fromEmail) {
+                                alert('Please enter your email address.'); // Show an alert if the email is missing
+                                return;
+                            }
+
+                            const toEmail = 'nishanthsbz05@gmail.com'; // Your email address
+                            const subject = document.getElementById('subject').value;
+                            const body = document.getElementById('body').value;
+
+                            // Detect if the user is on a mobile device
+                            const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+                            let mailtoLink;
+
+                            if (isMobile) {
+                                // Use mailto for mobile devices
+                                mailtoLink = `mailto:${encodeURIComponent(toEmail)}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}%0D%0A%0D%0AFrom: ${encodeURIComponent(fromEmail)}`;
+                            } else {
+                                // Use Gmail-specific link for desktop
+                                mailtoLink = `https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=${encodeURIComponent(toEmail)}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}&bcc=${encodeURIComponent(fromEmail)}`;
+                            }
+
+                            // Open the appropriate mail client
+                            window.open(mailtoLink, '_blank');
+                        });
+                    </script>
+                </div>
+
+                <!-- Social Icons and Contact Info Section -->
+                <div class="footer-section social-contact-info">
+                    <div class="contact-info">
+                        <h4 style="font-size: 30px; color: #d2b356;">CONTACT US</h4>
+                        <p>123 Training Avenue, Suite 456</p>
+                        <p>City, State, ZIP</p>
+                        <p>Phone: <span style="font-size: 10px;"!important><a href="tel:">(123) 456-7890</a></span></p>
+                        <p>Email: <span style="font-size: 10px;"!important><a href="mailto:">contact@sociopotents.com</a></span></p>
+                    </div>
+
+                    <h4 style="font-size: 30px; color: #d2b356;">FOLLOW US</h4>
+                    <ul>
+                        <li>
+                            <a target="_blank" title="Facebook" href="https://www.facebook.com/username">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" title="Mail" href="mailto:contact@sociopotents.com">
+                                <i class="fa-solid fa-envelope"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" title="Twitter" href="http://www.twitter.com/username">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" title="Instagram" href="http://www.instagram.com/username">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                
+                <p id="copyright">Made with love ❤️ by <a href="#">KYRAS</a></p>
             </div>
         </footer>
+
+
         <!--End of Footer-->
 
     </div>
